@@ -507,41 +507,29 @@ nav.scrolled { box-shadow: 0 1px 30px rgba(42,34,32,0.06); }
 .client-gallery {
   overflow: hidden;
   background: rgba(42,34,32,0.03);
-  position: relative;
-}
-.client-gallery::after {
-  content: '';
-  position: absolute;
-  top: 0; right: 0; bottom: 0;
-  width: 40px;
-  background: linear-gradient(to left, rgba(255,255,255,0.9), transparent);
-  pointer-events: none;
-  z-index: 1;
 }
 .gallery-scroll {
   display: flex;
   gap: 10px;
-  padding: 14px 40px 14px 14px;
+  padding: 14px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
 }
 .gallery-scroll::-webkit-scrollbar { display: none; }
 .gallery-img {
   flex: 0 0 auto;
-  height: 260px;
+  height: 280px;
   width: auto;
-  border-radius: 8px;
+  border-radius: 10px;
   object-fit: cover;
   scroll-snap-align: start;
-  box-shadow: 0 2px 10px rgba(42,34,32,0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 12px rgba(42,34,32,0.10);
+  transition: transform 0.3s ease;
 }
 .gallery-img:hover {
-  transform: scale(1.02);
-  box-shadow: 0 4px 18px rgba(42,34,32,0.15);
+  transform: scale(1.03);
 }
 
 .client-tags {
@@ -1033,12 +1021,8 @@ footer p {
           <img src="assets/viktor-benson/vb-2.jpeg" alt="Viktor Benson TikTok profile with 9,543 views" class="gallery-img">
           <img src="assets/viktor-benson/vb-1.jpeg" alt="Viktor Benson TikTok content grid" class="gallery-img">
           <img src="assets/viktor-benson/vb-4.jpeg" alt="5 Investments That Actually Pay Off carousel" class="gallery-img">
-          <img src="assets/viktor-benson/vb-3.jpeg" alt="Courses and Skills carousel slide" class="gallery-img">
-          <img src="assets/viktor-benson/vb-5.jpeg" alt="Tools That Save You Time carousel slide" class="gallery-img">
-          <img src="assets/viktor-benson/vb-8.jpeg" alt="Paid Ads With Tested Offers carousel slide" class="gallery-img">
-          <img src="assets/viktor-benson/vb-7.jpeg" alt="Hiring For Your Weak Points carousel slide" class="gallery-img">
-          <img src="assets/viktor-benson/vb-6.jpeg" alt="Your Health and Energy carousel slide" class="gallery-img">
           <img src="assets/viktor-benson/vb-9.jpeg" alt="Viktor Benson Twitter quote graphic" class="gallery-img">
+          <img src="assets/viktor-benson/vb-3.jpeg" alt="Courses and Skills carousel slide" class="gallery-img">
         </div>
       </div>
       <div class="client-top">
@@ -1067,10 +1051,10 @@ footer p {
 
     <!-- SPENDTAB -->
     <div class="client reveal">
-      <div class="client-gallery">
-        <div class="gallery-scroll">
-          <img src="assets/spendtab/spendtab-1.jpeg" alt="SpendTab Instagram content grid" class="gallery-img">
-        </div>
+      <div class="client-screens">
+        <div class="screen-placeholder">Profile</div>
+        <div class="screen-placeholder">Content</div>
+        <div class="screen-placeholder">Brand</div>
       </div>
       <div class="client-top">
         <p class="client-niche">Fintech / SaaS · Business Finance Tracker</p>
@@ -1150,7 +1134,7 @@ footer p {
 </section>
 
 <footer>
-  <p>&copy; 2025 Amina Fasasi Temitayo</p>
+  <p>&copy; 2026 Amina Fasasi Temitayo</p>
   <p>Nigeria · Available for Remote Work Worldwide</p>
 </footer>
 
